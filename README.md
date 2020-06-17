@@ -14,7 +14,7 @@ $ npm install abck
 ## Usage
 
 ```javascript
-const Abck = require('abck');
+const Abck = require('abck').default;
 
 const abck = new Abck(['=='], Date.now(), "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36", {
 	availWidth: 1680,
