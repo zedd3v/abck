@@ -1,0 +1,27 @@
+{
+  "name": "abck",
+  "version": "1.0.0",
+  "description": "A library that makes generating akamai cookies easier.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "zeddev",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node ./dist/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "directory": "git+https://github.com/zedd3v/abck.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zedd3v/abck/issues"
+  },
+  "homepage": "https://github.com/zedd3v/abck#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "eslint": "^7.2.0",
+    "typescript": "^3.9.5"
+  }
+}
