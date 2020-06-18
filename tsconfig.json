@@ -6,6 +6,6 @@
 		"outDir": "./dist"
 	},
 	"include": [
-		"src/**/*", "ignore/test.ts"
-	]
+		"src/**/*",
+    ]
 }

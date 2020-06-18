@@ -1,6 +1,6 @@
 {
   "name": "abck",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A library that makes generating akamai cookies easier.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
