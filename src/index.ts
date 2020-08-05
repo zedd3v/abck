@@ -42,7 +42,7 @@ class Abck {
         return userAgent.replace(/\\|"/g, "");
     }
 
-    static ab(t: string): string {
+    static ab(t: string): number {
         if (t == null) return "-1";
         try {
             let a = 0;
@@ -50,9 +50,9 @@ class Abck {
                 const n = t.charCodeAt(e);
                 n < 128 && (a += n)
             }
-            return a.toString();
+            return a;
         } catch (e) {
-            return "-2";
+            return -2;
         }
     }
 
