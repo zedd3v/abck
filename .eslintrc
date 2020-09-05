@@ -1,0 +1,11 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true,
+    "browser": true
+  },
+  "extends": [
+    "airbnb-typescript-prettier",
+    "eslint:recommended"
+  ]
+}

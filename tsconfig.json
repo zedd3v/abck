@@ -1,11 +1,14 @@
 {
-	"compilerOptions": {
-		"module": "commonjs",
-		"target": "es6",
-		"declaration": true,
-		"outDir": "./dist"
-	},
-	"include": [
-		"src/**/*",
-    ]
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ESNext",
+    "declaration": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "src/**/*",
+  ],
+  "exclude": [
+    "./dist/"
+  ]
 }

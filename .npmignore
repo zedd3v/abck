@@ -1,4 +1,5 @@
 src
 ignore
 tsconfig.json
-.eslintrc.json
+.prettierrc
+.eslintrc
