@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "author": "zeddev",
   "scripts": {
-    "build": "npm run eslint && npm run clean && tsc -p tsconfig.build.json && cp -r ./package.json ./dist",
+    "build": "npm run eslint && npm run clean && tsc -p tsconfig.build.json",
     "eslint": "eslint --fix ./src/**/*.ts",
     "clean": "rm -rf ./dist",
     "test": "npm run build && node ./ignore/test"
