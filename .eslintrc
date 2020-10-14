@@ -1,11 +1,32 @@
 {
-  "env": {
-    "es2021": true,
-    "node": true,
-    "browser": true
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "project": "./tsconfig.json"
   },
+  "plugins": [
+    "@typescript-eslint",
+    "eslint-comments",
+    "promise",
+    "unicorn",
+    "prettier"
+  ],
   "extends": [
-    "airbnb-typescript-prettier",
-    "eslint:recommended"
-  ]
+    "airbnb-typescript/base",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:eslint-comments/recommended",
+    "plugin:promise/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "rules": {
+    "no-bitwise": "off",
+    "no-plusplus": "off"
+  },
+  "env": {
+    "node": true
+  }
 }

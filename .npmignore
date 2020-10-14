@@ -1,5 +1,7 @@
 src
 ignore
 tsconfig.json
+tsconfig.build.json
 .prettierrc
 .eslintrc
+node_modules

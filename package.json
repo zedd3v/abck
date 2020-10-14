@@ -1,13 +1,15 @@
 {
   "name": "abck",
-  "version": "1.6.4",
+  "version": "1.6.5",
   "description": "A library that makes generating akamai cookies easier.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "zeddev",
   "scripts": {
-    "build": "tsc",
-    "test": "tsc && node ./ignore/test"
+    "build": "npm run eslint && npm run clean && tsc -p tsconfig.build.json && cp -r ./package.json ./dist",
+    "eslint": "eslint --fix ./src/**/*.ts",
+    "clean": "rm -rf ./dist",
+    "test": "npm run build && node ./ignore/test"
   },
   "repository": {
     "type": "git",
@@ -20,8 +22,16 @@
   "homepage": "https://github.com/zedd3v/abck#readme",
   "devDependencies": {
     "@types/lodash": "^4.14.161",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
     "eslint": "^7.8.1",
-    "eslint-config-airbnb-typescript-prettier": "^3.1.0",
+    "eslint-config-airbnb-typescript": "^11.0.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-unicorn": "^22.0.0",
     "prettier": "^2.1.1",
     "typescript": "^4.0.2"
   }
