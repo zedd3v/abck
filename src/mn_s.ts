@@ -85,7 +85,7 @@ function mn_s(a: string): number[] {
     i = 2600822924,
     c = 528734635,
     b = 1541459225,
-    d = bmak.encode_utf8(a),
+    d = encode_utf8(a),
     k = 8 * d.length;
   d += String.fromCharCode(128);
   for (var s = d.length / 4 + 2, l = Math.ceil(s / 16), u = new Array(l), _ = 0; _ < l; _++) {
@@ -109,14 +109,14 @@ function mn_s(a: string): number[] {
       _ < 16
         ? (g[_] = u[h][_])
         : ((j =
-            bmak.rotate_right(g[_ - 15], 7) ^ bmak.rotate_right(g[_ - 15], 18) ^ (g[_ - 15] >>> 3)),
+            rotate_right(g[_ - 15], 7) ^ rotate_right(g[_ - 15], 18) ^ (g[_ - 15] >>> 3)),
           (A =
-            bmak.rotate_right(g[_ - 2], 17) ^ bmak.rotate_right(g[_ - 2], 19) ^ (g[_ - 2] >>> 10)),
+            rotate_right(g[_ - 2], 17) ^ rotate_right(g[_ - 2], 19) ^ (g[_ - 2] >>> 10)),
           (g[_] = g[_ - 16] + j + g[_ - 7] + A)),
-        (A = bmak.rotate_right(C, 6) ^ bmak.rotate_right(C, 11) ^ bmak.rotate_right(C, 25)),
+        (A = rotate_right(C, 6) ^ rotate_right(C, 11) ^ rotate_right(C, 25)),
         (L = (C & v) ^ (~C & M)),
         (P = x + A + L + t[_] + g[_]),
-        (j = bmak.rotate_right(w, 2) ^ bmak.rotate_right(w, 13) ^ bmak.rotate_right(w, 22)),
+        (j = rotate_right(w, 2) ^ rotate_right(w, 13) ^ rotate_right(w, 22)),
         (T = (w & y) ^ (w & E) ^ (y & E)),
         (D = j + T),
         (x = M),
